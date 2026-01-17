@@ -1,5 +1,5 @@
 // Vercel serverless function to proxy Claude API calls
-const API_KEY = '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';
+const API_KEY = process.env.ANTHROPIC_API_KEY;
 // Fetch live FPL data from the official API
 async function fetchFPLData() {
   try {
